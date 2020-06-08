@@ -1,6 +1,6 @@
 # PTT Kargo Barkod Numarası - Check Digit Hesaplama Örnekleri
 
-Classic ASP, PHP ve Golang örnekleri.
+Classic ASP, PHP, Javascript ve Golang örnekleri.
 
 ## Hesaplama Formülü
 
