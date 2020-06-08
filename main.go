@@ -21,7 +21,7 @@ func pttCheckDigit(barcode int64) int64 {
 		multiplier := map[bool]int{true: 1, false: 3}[i%2 == 0]
 		vint, _ := strconv.Atoi(v)
 
-		total = total + (vint * multiplier)
+		total += (vint * multiplier)
 	}
 
 	digit := 10 - total%10
