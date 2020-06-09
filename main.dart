@@ -1,11 +1,11 @@
 void main() {
   const barcode = 275036569845;
-  var barcodeWithCheckDigit = pttCheckDigit(barcode);
+  var barcodeWithCheckDigit = checkDigit(barcode);
   print(barcodeWithCheckDigit);
 }
 
 
-int pttCheckDigit(int barcode) {
+int checkDigit(int barcode) {
   List arrBarcode = barcode.toString().split('');
   int total = 0;
 

@@ -1,6 +1,6 @@
 <?php
 
-function pttCheckDigit($barcode)
+function checkDigit($barcode)
 {
     $arrSplit = str_split($barcode);
     $total = 0;
@@ -13,4 +13,4 @@ function pttCheckDigit($barcode)
 }
 
 $barcode = 275036569845;
-$barcodeWithCheckDigit = pttCheckDigit($barcode);
+$barcodeWithCheckDigit = checkDigit($barcode);

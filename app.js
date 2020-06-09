@@ -1,5 +1,5 @@
 
-const pttCheckDigit = (barcode) => {
+const checkDigit = (barcode) => {
     const strBarcode = String(barcode).split('');
     let total = 0;
 
@@ -12,5 +12,5 @@ const pttCheckDigit = (barcode) => {
 };
 
 const barcode = 275036569845;
-const barcodeWithCheckDigit = pttCheckDigit(barcode);
+const barcodeWithCheckDigit = checkDigit(barcode);
 console.log('barcodeWithCheckDigit => ', barcodeWithCheckDigit);

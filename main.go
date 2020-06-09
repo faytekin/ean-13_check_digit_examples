@@ -8,11 +8,11 @@ import (
 
 func main() {
 	const barcode = 275036569845
-	barcodeWithCheckDigit := pttCheckDigit(barcode)
+	barcodeWithCheckDigit := checkDigit(barcode)
 	println(barcodeWithCheckDigit)
 }
 
-func pttCheckDigit(barcode int64) int64 {
+func checkDigit(barcode int64) int64 {
 	strBarcode := strconv.FormatInt(barcode, 10)
 	arrBarcode := strings.SplitAfter(strBarcode, "")
 	total := 0

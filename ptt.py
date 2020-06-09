@@ -1,5 +1,5 @@
 
-def pttCheckDigit(barcode):
+def checkDigit(barcode):
     arrBarcode = enumerate(str(barcode))
     total = 0
 
@@ -11,5 +11,5 @@ def pttCheckDigit(barcode):
 
 
 barcode = 275036569845
-barcodeWithCheckDigit = pttCheckDigit(barcode)
+barcodeWithCheckDigit = checkDigit(barcode)
 print(barcodeWithCheckDigit)

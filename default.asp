@@ -1,5 +1,5 @@
 <%
-Function pttCheckDigit(barcode)
+Function checkDigit(barcode)
     If IsNull(barcode) Then Exit Function
     total = 0
 
@@ -13,9 +13,9 @@ Function pttCheckDigit(barcode)
         End If
     Next
 
-    pttCheckDigit = CDbl(barcode & ((10 - total Mod 10) Mod 10))
+    checkDigit = CDbl(barcode & ((10 - total Mod 10) Mod 10))
 End Function
 
 barcode = 275036569845
-barcodeWithCheckDigit = pttCheckDigit(barcode)
+barcodeWithCheckDigit = checkDigit(barcode)
 %>
