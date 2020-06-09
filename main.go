@@ -24,7 +24,7 @@ func pttCheckDigit(barcode int64) int64 {
 		total += (vint * multiplier)
 	}
 
-	digit := 10 - total%10
+	digit := (10 - total%10) % 10
 	result, _ := strconv.ParseInt(fmt.Sprintf("%s%d", strBarcode, digit), 10, 64)
 
 	return result

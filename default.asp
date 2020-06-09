@@ -13,7 +13,7 @@ Function pttCheckDigit(barcode)
         End If
     Next
 
-    pttCheckDigit = CDbl(barcode & (10 - total Mod 10))
+    pttCheckDigit = CDbl(barcode & ((10 - total Mod 10) Mod 10))
 End Function
 
 barcode = 275036569845

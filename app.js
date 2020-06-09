@@ -7,10 +7,10 @@ const pttCheckDigit = (barcode) => {
         total += key %2 == 0 ? value * 1 : value * 3;
     });
 
-    const result = String(barcode) + (10 - total % 10);
+    const result = String(barcode) + ((10 - total % 10) % 10);
     return parseInt(result);
 };
 
-const barcode = 275036569845;
+const barcode = 275036569847;
 const barcodeWithCheckDigit = pttCheckDigit(barcode);
 console.log('barcodeWithCheckDigit => ', barcodeWithCheckDigit);

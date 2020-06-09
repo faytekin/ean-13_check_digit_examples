@@ -9,7 +9,7 @@ function pttCheckDigit($barcode)
         $total += $key % 2 == 0 ? $value * 1 : $value * 3;
     }
 
-    return $barcode.(10 - $total % 10);
+    return $barcode.((10 - $total % 10) % 10);
 }
 
 $barcode = 275036569845;
