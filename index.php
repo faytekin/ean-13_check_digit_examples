@@ -1,6 +1,6 @@
 <?php
 
-function checkDigit($barcode)
+function checkDigit(int $barcode): int
 {
     $arrSplit = str_split($barcode);
     $total = 0;
