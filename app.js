@@ -11,6 +11,6 @@ const pttCheckDigit = (barcode) => {
     return parseInt(result);
 };
 
-const barcode = 275036569847;
+const barcode = 275036569845;
 const barcodeWithCheckDigit = pttCheckDigit(barcode);
 console.log('barcodeWithCheckDigit => ', barcodeWithCheckDigit);

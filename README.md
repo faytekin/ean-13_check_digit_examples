@@ -1,4 +1,6 @@
-# PTT Kargo Barkod Numarası - Check Digit Hesaplama Örnekleri
+# PTT Kargo Barkod Numarası
+
+## EAN-13 Barcode Check Digit Hesaplama Örnekleri
 
 Classic ASP, PHP, Javascript, Python, Dart ve Golang örnekleri.
 
